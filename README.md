@@ -24,8 +24,9 @@ Feito com dedicação, carinho e:
 - [Cheerio](https://github.com/cheeriojs/cheerio) 
 - [Discord.JS](https://discord.js.org/#/)
 
-#### Mais
+### Mais
 [Presidente BOT para Telegram](https://github.com/paulo9mv/presidente-telegram-bot) :iphone:
+
 Contribuições são bem-vindas!
 
 :pencil2: **Paulo Viana**
