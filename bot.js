@@ -4,20 +4,48 @@ const auth = require('./auth.json');
 const rp = require('request-promise');
 const $ = require('cheerio');
 const presidentes = require('./presidentes.json');
-
-const PHRASE_CMD = "!pr";
+const express = require('express');
+const app = express();
+const PHRASE_CMD = "/pr";
+const HELP = "/help";
+const ABOUT = "/about";
 const quoteurl = "https://pt.wikiquote.org/wiki/";
 
+/*
+var http = require("http");
+setInterval(function() {
+    http.get("http://presidentebot.herokuapp.com");
+}, 300000 * 2); // every 10 minutes (300000 * 2)
+*/
 client.on('ready', () => {
+  client.user.setActivity('Hino Nacional Brasileiro', {type:'LISTENING'});
   console.log(`Logged in as ${client.user.tag}!`);
-});
+})
+
+app.listen(process.env.PORT || 5000);
 
 client.on('message', msg => {
 
   if(msg.author.bot)
   return;
 
+  if(msg.content == HELP){
+	let reply_message = 'Utilize: \n/help - Seção de ajuda\n/pr - Envia citação aleatória de presidente\n/about - Sobre o BOT';
+	msg.reply(reply_message);
+  }
+
+  if(msg.content == ABOUT){
+	let message = 'Presidente BOT\nDisponível em https://github.com/paulo9mv/presidente-discord-bot\nPresidente BOT para Telegram: https://t.me/presidente_brasil_bot';
+	msg.channel.send(message);
+  }
+
   if(msg.content == PHRASE_CMD){
+
+    console.log('User: ' + msg.author.tag);
+    console.log('Channel: ' + msg.channel.name);	
+    console.log('Server: ' + msg.guild.name);
+    console.log('\n');
+
     let rand = Math.floor(Math.random() * presidentes.name.length);
     let nome = presidentes.name[rand];
   
