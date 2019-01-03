@@ -2,11 +2,9 @@
 const Discord = require('discord.js');
 const rp = require('request-promise');
 const $ = require('cheerio');
-const express = require('express');
 
 //Client
 const client = new Discord.Client();
-const app = express();
 
 //Imports
 const auth = require('./auth.json');
@@ -28,8 +26,6 @@ client.on('ready', () => {
   client.user.setActivity('Hino Nacional Brasileiro', {type:'LISTENING'});
   console.log(`Logged in as ${client.user.tag}!`);
 })
-
-app.listen(process.env.PORT || 5000);
 
 client.on('message', msg => {
 
