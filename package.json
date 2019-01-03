@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "My own Discord bot",
   "main": "bot.js",
+  "scripts": {
+  "start": "node bot.js"
+  },
   "author": "Paulo Vitor",
   "dependencies": {
     "axios": "^0.18.0",
