@@ -1,22 +1,29 @@
+//Modules
 const Discord = require('discord.js');
-const client = new Discord.Client();
-const auth = require('./auth.json');
 const rp = require('request-promise');
 const $ = require('cheerio');
-const presidentes = require('./presidentes.json');
 const express = require('express');
+
+//Client
+const client = new Discord.Client();
 const app = express();
+
+//Imports
+const auth = require('./auth.json');
+const presidentes = require('./presidentes.json');
+
+//Commands
 const PHRASE_CMD = "/pr";
 const HELP = "/help";
 const ABOUT = "/about";
-const quoteurl = "https://pt.wikiquote.org/wiki/";
 
-/*
-var http = require("http");
-setInterval(function() {
-    http.get("http://presidentebot.herokuapp.com");
-}, 300000 * 2); // every 10 minutes (300000 * 2)
-*/
+//URL
+const QUOTEURL = "https://pt.wikiquote.org/wiki/";
+
+//Strings
+const HELP_TEXT = 'Utilize: \n/help - Seção de ajuda\n/pr - Envia citação aleatória de presidente\n/about - Sobre o BOT';
+const ABOUT_TEXT = 'Presidente BOT\nDisponível em https://github.com/paulo9mv/presidente-discord-bot\nPresidente BOT para Telegram: https://t.me/presidente_brasil_bot';
+
 client.on('ready', () => {
   client.user.setActivity('Hino Nacional Brasileiro', {type:'LISTENING'});
   console.log(`Logged in as ${client.user.tag}!`);
@@ -30,28 +37,21 @@ client.on('message', msg => {
   return;
 
   if(msg.content == HELP){
-	let reply_message = 'Utilize: \n/help - Seção de ajuda\n/pr - Envia citação aleatória de presidente\n/about - Sobre o BOT';
-	msg.reply(reply_message);
+	msg.reply(HELP_TEXT);
   }
 
   if(msg.content == ABOUT){
-	let message = 'Presidente BOT\nDisponível em https://github.com/paulo9mv/presidente-discord-bot\nPresidente BOT para Telegram: https://t.me/presidente_brasil_bot';
-	msg.channel.send(message);
+	msg.channel.send(ABOUT_TEXT);
   }
 
   if(msg.content == PHRASE_CMD){
-
-    console.log('User: ' + msg.author.tag);
-    console.log('Channel: ' + msg.channel.name);	
-    console.log('Server: ' + msg.guild.name);
-    console.log('\n');
 
     let rand = Math.floor(Math.random() * presidentes.name.length);
     let nome = presidentes.name[rand];
   
     let parseNome = nome.replace(/\s/g, "_");
 
-    rp(quoteurl + parseNome)
+    rp(QUOTEURL + parseNome)
     .then(function(html){
       let frases = [];
       let frase = $('.mw-parser-output', html);
