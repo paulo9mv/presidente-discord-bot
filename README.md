@@ -1,6 +1,6 @@
 
 # Presidente BOT :speech_balloon:
-![brasao_da_republica](assets/presidencia.jpg)
+![brasao_da_republica](assets/presidencia.ico)
 
 Bot do Discord que envia citações aleatórias dos ~~quase~~ todos presidentes do Brasil. :mag: :computer:
 
