@@ -10,10 +10,15 @@ Acesse [este link](https://discordapp.com/oauth2/authorize?client_id=53020910023
 ## Funcionamento
 **Presidente BOT** funciona a partir do comando */pr* que dispara uma consulta ao [WikiQuotes](https://pt.wikiquote.org/wiki/P%C3%A1gina_principal) e retorna uma citação aleatória de presidentes do Brasil.
 
+**Comandos**
+- /pr    :arrow_right: Envia citação aleatória
+- /help  :arrow_right: Seção de ajuda
+- /about :arrow_right: Sobre o BOT
+
 ![Alt Text](assets/chat.gif)
 
 ### Bibliotecas
-Feito com
+Feito com dedicação, carinho e:
 - [NodeJS](https://nodejs.org/en/)
 - [Cheerio](https://github.com/cheeriojs/cheerio) 
 - [Discord.JS](https://discord.js.org/#/)
