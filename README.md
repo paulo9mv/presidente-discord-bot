@@ -20,6 +20,7 @@ Acesse [este link](https://discordapp.com/oauth2/authorize?client_id=53020910023
 ### Bibliotecas
 Feito com dedicação, carinho e:
 - [NodeJS](https://nodejs.org/en/)
+- [Request](https://github.com/request/request)
 - [Cheerio](https://github.com/cheeriojs/cheerio) 
 - [Discord.JS](https://discord.js.org/#/)
 
