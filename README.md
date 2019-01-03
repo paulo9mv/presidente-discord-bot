@@ -16,4 +16,6 @@ Feito com
 - [Discord.JS](https://discord.js.org/#/)
 
 #### Mais
-Quaisquer contribuições são bem-vindas!
+Contribuições são bem-vindas!
+
+:pencil2: **Paulo Viana**
