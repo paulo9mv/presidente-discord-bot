@@ -1,0 +1,14 @@
+{
+  "name": "greeter-bot",
+  "version": "1.0.0",
+  "description": "My own Discord bot",
+  "main": "bot.js",
+  "author": "Paulo Vitor",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^11.4.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
