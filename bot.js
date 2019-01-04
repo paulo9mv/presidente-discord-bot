@@ -9,18 +9,7 @@ const client = new Discord.Client();
 //Imports
 const auth = require('./auth.json');
 const presidentes = require('./presidentes.json');
-
-//Commands
-const PHRASE_CMD = "/pr";
-const HELP = "/help";
-const ABOUT = "/about";
-
-//URL
-const QUOTEURL = "https://pt.wikiquote.org/wiki/";
-
-//Strings
-const HELP_TEXT = 'Utilize: \n/help - Seção de ajuda\n/pr - Envia citação aleatória de presidente\n/about - Sobre o BOT';
-const ABOUT_TEXT = 'Presidente BOT\nDisponível em https://github.com/paulo9mv/presidente-discord-bot\nPresidente BOT para Telegram: https://t.me/presidente_brasil_bot';
+const strings = require('./strings/strings.json');
 
 client.on('ready', () => {
   client.user.setActivity('Hino Nacional Brasileiro', {type:'LISTENING'});
@@ -32,22 +21,22 @@ client.on('message', msg => {
   if(msg.author.bot)
   return;
 
-  if(msg.content == HELP){
-	msg.reply(HELP_TEXT);
+  if(msg.content == strings.help_cmd){
+	msg.reply(strings.help);
   }
 
-  if(msg.content == ABOUT){
-	msg.channel.send(ABOUT_TEXT);
+  if(msg.content == strings.about_cmd){
+	msg.channel.send(strings.about);
   }
 
-  if(msg.content == PHRASE_CMD){
+  if(msg.content == strings.random_cmd){
 
     let rand = Math.floor(Math.random() * presidentes.name.length);
     let nome = presidentes.name[rand];
-  
+
     let parseNome = nome.replace(/\s/g, "_");
 
-    rp(QUOTEURL + parseNome)
+    rp(strings.url + parseNome)
     .then(function(html){
       let frases = [];
       let frase = $('.mw-parser-output', html);
@@ -103,9 +92,9 @@ client.on('message', msg => {
         }
       }
 
-      //Envia a mensagem
-      let randPhrase = Math.floor(Math.random() * frases.length);
-      let message = frases[randPhrase];
+      //Seleciona uma msg aleatória e envia
+      let indexFrase = Math.floor(Math.random() * frases.length);
+      let message = frases[indexFrase];
 
       msg.channel.send(message);
     })
