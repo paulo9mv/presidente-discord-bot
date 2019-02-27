@@ -92,11 +92,20 @@ client.on('message', msg => {
         }
       }
 
-      //Seleciona uma msg aleatória e envia
+      let photosrc = $('div > a > img', html).attr("src");
+      let photourl = 'http:' + photosrc
+
       let indexFrase = Math.floor(Math.random() * frases.length);
       let message = frases[indexFrase];
 
-      msg.channel.send(message);
+      //Send photo
+      msg.channel.send({
+        files: [photourl]
+      })
+      .then(function(){
+        msg.channel.send(message)  //After photo sent, sent quote
+      })
+      .catch(console.error);
     })
   }
 });
