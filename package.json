@@ -4,11 +4,12 @@
   "description": "My own Discord bot",
   "main": "bot.js",
   "scripts": {
-  "start": "node bot.js"
+    "start": "node bot.js"
   },
   "author": "Paulo Vitor",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
     "discord.js": "^11.4.2",
     "request": "^2.88.0",

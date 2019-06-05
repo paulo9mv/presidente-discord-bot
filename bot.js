@@ -22,11 +22,13 @@ client.on('message', msg => {
   return;
 
   if(msg.content == strings.help_cmd){
-	msg.reply(strings.help);
+  msg.reply(strings.help);
+  return;
   }
 
   if(msg.content == strings.about_cmd){
-	msg.channel.send(strings.about);
+  msg.channel.send(strings.about);
+  return;
   }
 
   if(msg.content == strings.random_cmd){
@@ -65,9 +67,7 @@ client.on('message', msg => {
 
           if(tmp.children[0].name == "li"){
             let str = "";
-            let tag_li = tmp.children[0];
-            let tag_li_name = tag_li.name;
-            let tag_li_type = tag_li.type;
+            let tag_li = tmp.children[0];            
             let tag_li_children_length = tag_li.children.length;
 
             for(let j = 0; j < tag_li_children_length; j++){
