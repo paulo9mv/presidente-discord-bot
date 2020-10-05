@@ -6,6 +6,8 @@ const $ = require('cheerio');
 //Client
 const client = new Discord.Client();
 
+let generated = 0
+
 //Imports
 const auth = require('./auth.json');
 const presidentes = require('./presidentes.json');
@@ -30,6 +32,11 @@ client.on('message', msg => {
   msg.channel.send(strings.about);
   return;
   }
+
+  if(msg.content == strings.status_cmd){
+    msg.channel.send(`Já foram geradas ${generated} frases aleatórias.`);
+    return;
+    }
 
   if(msg.content == strings.random_cmd){
 
@@ -103,6 +110,7 @@ client.on('message', msg => {
         files: [photourl]
       })
       .then(function(){
+        generated++;
         msg.channel.send(message)  //After photo sent, sent quote
       })
       .catch(console.error);
