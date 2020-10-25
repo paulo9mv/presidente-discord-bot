@@ -14,6 +14,7 @@ Acesse [este link](https://discordapp.com/oauth2/authorize?client_id=53020910023
 - /random    :arrow_right: Envia citação aleatória
 - /help  :arrow_right: Seção de ajuda
 - /about :arrow_right: Sobre o BOT
+- /status :arrow_right: Quantidades de frases geradas
 
 ![Alt Text](assets/chat.gif)
 
