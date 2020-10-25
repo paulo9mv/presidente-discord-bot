@@ -9,7 +9,6 @@ const client = new Discord.Client();
 let generated = 0
 
 //Imports
-const auth = require('./auth.json');
 const presidentes = require('./presidentes.json');
 const strings = require('./strings/strings.json');
 
@@ -118,4 +117,4 @@ client.on('message', msg => {
   }
 });
 
-client.login(auth.token);
+client.login(process.env.DISCORD_TOKEN);
