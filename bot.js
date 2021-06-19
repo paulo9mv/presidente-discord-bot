@@ -10,7 +10,6 @@ let generated = 0
 
 //Imports
 const presidentes = require('./presidentes.json');
-const token = require('./secret.json');
 const strings = require('./strings/strings.json');
 
 client.on('ready', () => {
@@ -93,4 +92,4 @@ client.on('message', async msg => {
   }
 });
 
-client.login(process.env.DISCORD_TOKEN || token.token);
+client.login(process.env.DISCORD_TOKEN);
