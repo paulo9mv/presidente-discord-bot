@@ -10,14 +10,14 @@ Acesse [este link](https://discordapp.com/oauth2/authorize?client_id=53020910023
 
 ## Funcionamento
 
-**Presidente BOT** funciona a partir do comando _/random_ que dispara uma consulta ao [Pensador](https://www.pensador.com/) e retorna uma citação aleatória de presidentes do Brasil.
+**Presidente BOT** funciona a partir do comando _-pr_ que dispara uma consulta ao [Pensador](https://www.pensador.com/) e retorna uma citação aleatória de presidentes do Brasil.
 
 **Comandos**
 
-- /random :arrow_right: Envia citação aleatória
-- /help :arrow_right: Seção de ajuda
-- /about :arrow_right: Sobre o BOT
-- /status :arrow_right: Quantidades de frases geradas
+- -pr :arrow_right: Envia citação aleatória
+- -pr :arrow_right: Seção de ajuda
+- -pr :arrow_right: Sobre o BOT
+- -pr :arrow_right: Quantidades de frases geradas
 
 ![Alt Text](assets/chat.gif)
 
@@ -26,7 +26,6 @@ Acesse [este link](https://discordapp.com/oauth2/authorize?client_id=53020910023
 Feito com dedicação, carinho e:
 
 - [NodeJS](https://nodejs.org/en/)
-- [Request Promise](https://github.com/request/request-promise)
 - [Cheerio](https://github.com/cheeriojs/cheerio)
 - [Discord.JS](https://discord.js.org/#/)
 
