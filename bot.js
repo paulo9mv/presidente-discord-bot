@@ -22,6 +22,23 @@ var randomProperty = function (obj) {
   return obj[keys[keys.length * Math.random() << 0]];
 };
 
+client.on("guildCreate", guild => {
+  let channelID;
+  let channels = guild.channels.cache;
+
+  channelLoop:
+  for (let key in channels) {
+    let c = channels[key];
+    if (c[1].type === "text") {
+      channelID = c[0];
+      break channelLoop;
+    }
+  }
+
+  let channel = guild.channels.cache.get(guild.systemChannelID || channelID);
+  channel.send(`Pra mim é uma enorme felicidade estar em meio ao povo! Utilize /help para aprender mais sobre mim.`);
+});
+
 client.on('message', async msg => {
 
   if (msg.author.bot)
@@ -82,6 +99,8 @@ client.on('message', async msg => {
 
     const frase = frases[Math.floor(Math.random() * frases.length)];
     const msg_channel = frase + '\n-' + nome
+
+    generated++
 
     msg.channel.send(msg_channel, {
       files: [`${randomPresident.avatar}`]
