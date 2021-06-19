@@ -1,9 +1,11 @@
 {
-  "help_cmd" : "/help",
-  "about_cmd" : "/about",
-  "random_cmd" : "/random",
-  "status_cmd" : "/status",
-  "help" : "utilize: \n/help - Seção de ajuda\n/status - Status das frases\n/pr - Envia citação aleatória de presidente\n/about - Sobre o BOT",
-  "about" : "Sobre\nDisponível em https://github.com/paulo9mv/presidente-discord-bot\nPresidente BOT para Telegram: https://t.me/presidente_brasil_bot",
-  "url" : "https://pt.wikiquote.org/wiki/"
+  "help_cmd": "-help",
+  "about_cmd": "-about",
+  "random_cmd": "-pr",
+  "status_cmd": "-status",
+  "help": "utilize: \n-help - Seção de ajuda\n-status - Status das frases\n-pr - Envia citação aleatória de presidente\n-about - Sobre o BOT",
+  "about": "Sobre\nDisponível em https://github.com/paulo9mv/presidente-discord-bot\nVocê pode contribuir com o código-fonte do BOT ou com doações em https://www.paypal.com/donate?hosted_button_id=L69CJF2MVNCEU",
+  "url": "https://pt.wikiquote.org/wiki/",
+  "donation": "https://www.paypal.com/donate?hosted_button_id=L69CJF2MVNCEU",
+  "arrive": "Pra mim é uma enorme felicidade estar em meio ao povo! Utilize -help para aprender mais sobre mim."
 }

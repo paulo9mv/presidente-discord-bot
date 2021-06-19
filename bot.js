@@ -36,7 +36,7 @@ client.on("guildCreate", guild => {
   }
 
   let channel = guild.channels.cache.get(guild.systemChannelID || channelID);
-  channel.send(`Pra mim é uma enorme felicidade estar em meio ao povo! Utilize /help para aprender mais sobre mim.`);
+  channel.send(strings.arrive);
 });
 
 client.on('message', async msg => {
