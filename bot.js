@@ -43,20 +43,16 @@ client.on('message', async msg => {
     return;
   }
 
-  if (msg.content == '.') {
+  if (msg.content == strings.random_cmd) {
     const safePresidentes = JSON.parse(JSON.stringify(presidentes))
     const parsePresidentes = (obj) => {
       const keys = Object.keys(obj)
 
       for (key of keys) {
-        console.log(key)
-
         if (!obj[key].key) {
           delete obj[key]
         }
       }
-
-      console.log(obj)
     }
 
     parsePresidentes(safePresidentes)
@@ -65,7 +61,7 @@ client.on('message', async msg => {
     const nome = randomPresident.name;
     const presidentKey = randomPresident.key
 
-    const response = await fetch(`https://www.pensador.com/author/${presidentKey}/`);
+    const response = await fetch(`https://www.pensador.com/autor/${presidentKey}/`);
     const body = await response.text();
 
     const $ = cheerio.load(body)
@@ -89,7 +85,7 @@ client.on('message', async msg => {
     const msg_channel = frase + '\n-' + nome
 
     msg.channel.send(msg_channel, {
-      files: ['https://upload.wikimedia.org/wikipedia/commons/8/81/Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg']
+      files: [`${randomPresident.avatar}`]
     })
 
 
