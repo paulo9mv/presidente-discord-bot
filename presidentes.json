@@ -1,33 +1,134 @@
 {
-  "name" : [
-    "Deodoro da Fonseca",
-    "Floriano Peixoto",
-    "Campos Sales",
-    "Afonso Pena",
-    "Nilo Peçanha",
-    "Rodrigues Alves",
-    "Delfim Moreira",
-    "Epitácio Pessoa",
-    "Washington Luís",
-    "Eurico Gaspar Dutra",
-    "Getúlio Vargas",
-    "Nereu Ramos",
-    "Jânio Quadros",
-    "Juscelino Kubitschek",
-    "João Goulart",
-    "Castello Branco",
-    "Costa e Silva",
-    "Emílio Garrastazu Médici",
-    "Ernesto Geisel",
-    "João Figueiredo",
-    "Tancredo Neves",
-    "José Sarney",
-    "Fernando Collor de Mello",
-    "Itamar Franco",
-    "Fernando Henrique Cardoso",
-    "Luiz Inácio Lula da Silva",
-    "Dilma Rousseff",
-    "Michel Temer",
-    "Jair Bolsonaro"
-  ]
+    "deodoro_da_fonseca": {
+        "name": "Deodoro da Fonseca",
+        "key": "marechal_deodoro_da_fonseca",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Deodoro_da_Fonseca_%281889%29.jpg/220px-Deodoro_da_Fonseca_%281889%29.jpg"
+    },
+    "floriano_peixoto": {
+        "name": "Floriano Peixoto",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Floriano_Peixoto_%281891%29.jpg/220px-Floriano_Peixoto_%281891%29.jpg"
+    },
+    "campos_sales": {
+        "name": "Campos Sales",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Campos_Sales.jpg/220px-Campos_Sales.jpg"
+    },
+    "afonso_pena": {
+        "name": "Afonso Pena",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Afonso_Pena.jpg/200px-Afonso_Pena.jpg"
+    },
+    "nilo_pecanha": {
+        "name": "Nilo Peçanha",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nilo_Pe%C3%A7anha_02.jpg/230px-Nilo_Pe%C3%A7anha_02.jpg"
+    },
+    "rodrigues_alves": {
+        "name": "Rodrigues Alves",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Rodrigues_Alves_3.jpg/220px-Rodrigues_Alves_3.jpg"
+    },
+    "delfim_moreira": {
+        "name": "Delfim Moreira",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Delfim_Moreira_%281918%29.jpg/220px-Delfim_Moreira_%281918%29.jpg"
+    },
+    "epitacio_pessoa": {
+        "name": "Epitácio Pessoa",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Epitacio_Pessoa_%281919%29.jpg/220px-Epitacio_Pessoa_%281919%29.jpg"
+    },
+    "washington_luis": {
+        "name": "Washington Luís",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Washington_Lu%C3%ADs_%28foto%29.jpg/220px-Washington_Lu%C3%ADs_%28foto%29.jpg"
+    },
+    "eurico_gaspar_dutra": {
+        "name": "Eurico Gaspar Dutra",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/GASPARDUTRA.jpg/220px-GASPARDUTRA.jpg"
+    },
+    "getulio_vargas": {
+        "name": "Getúlio Vargas",
+        "key": "getulio_vargas",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Getulio_Vargas_%281930%29.jpg/245px-Getulio_Vargas_%281930%29.jpg"
+    },
+    "nereu_ramos": {
+        "name": "Nereu Ramos",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Presidente_Nereu_Ramos.jpg/220px-Presidente_Nereu_Ramos.jpg"
+    },
+    "janio_quadros": {
+        "name": "Jânio Quadros",
+        "key": "janio_quadros",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Janio_Quadros.png/220px-Janio_Quadros.png"
+    },
+    "juscelino_kubitscheck": {
+        "name": "Juscelino Kubitscheck",
+        "key": "juscelino_kubitschek",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Juscelino.jpg/220px-Juscelino.jpg"
+    },
+    "joao_goulart": {
+        "name": "João Goulart",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Jango.jpg/220px-Jango.jpg"
+    },
+    "castello_branco": {
+        "name": "Castello Branco",
+        "key": "humberto_de_alencar_castelo_branco",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Castelobranco.jpg/220px-Castelobranco.jpg"
+    },
+    "costa_e_silva": {
+        "name": "Costa e Silva",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Costa_e_Silva.jpg/220px-Costa_e_Silva.jpg"
+    },
+    "medici": {
+        "name": "Emílio Garrastazu Médici",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Em%C3%ADlio_Garrastazu_M%C3%A9dici%2C_presidente_da_Rep%C3%BAblica._%28cropped%29.tif/lossy-page1-220px-Em%C3%ADlio_Garrastazu_M%C3%A9dici%2C_presidente_da_Rep%C3%BAblica._%28cropped%29.tif.jpg"
+    },
+    "ernesto_geisel": {
+        "name": "Ernesto Geisel",
+        "key": "general_ernesto_geisel",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Foto_oficial_do_presidente_Ernesto_Geisel.png/220px-Foto_oficial_do_presidente_Ernesto_Geisel.png"
+    },
+    "joao_figueiredo": {
+        "name": "João Figueiredo",
+        "key": "joao_batista_figueiredo",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Figueiredo_%28colour%29.jpg/220px-Figueiredo_%28colour%29.jpg"
+    },
+    "tancredo_neves": {
+        "name": "Tancredo Neves",
+        "key": "tancredo_neves",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tancredo_Neves%2C_1983.jpg/230px-Tancredo_Neves%2C_1983.jpg"
+    },
+    "jose_sarney": {
+        "name": "José Sarney",
+        "key": "jose_sarney",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Foto_Oficial_Sarney_EBC.jpg/220px-Foto_Oficial_Sarney_EBC.jpg"
+    },
+    "collor": {
+        "name": "Fernando Collor de Mello",
+        "key": "fernando_collor_de_mello",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Fernando_Collor_1992_B%26W.jpg/220px-Fernando_Collor_1992_B%26W.jpg"
+    },
+    "itamar_franco": {
+        "name": "Itamar Franco",
+        "key": "itamar_franco",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Itamar_Augusto_Cautiero_Franco.gif/220px-Itamar_Augusto_Cautiero_Franco.gif"
+    },
+    "fernando_henrique_cardoso": {
+        "name": "Fernando Henrique Cardoso",
+        "key": "fernando_henrique_cardoso",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Fernando_Henrique_Cardoso_%281999%29.jpg/220px-Fernando_Henrique_Cardoso_%281999%29.jpg"
+    },
+    "lula": {
+        "name": "Luiz Inácio Lula da Silva",
+        "key": "luiz_inacio_lula_da_silva",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Lula_-_foto_oficial_-_05_jan_2007.jpg/220px-Lula_-_foto_oficial_-_05_jan_2007.jpg"
+    },
+    "dilma": {
+        "name": "Dilma Rousseff",
+        "key": "dilma_rousseff",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg/220px-Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg"
+    },
+    "temer": {
+        "name": "Michel Temer",
+        "key": "michel_temer",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Michel_Temer_%28foto_oficial%29.jpg/800px-Michel_Temer_%28foto_oficial%29.jpg"
+    },
+    "bolsonaro": {
+        "name": "Jair Bolsonaro",
+        "key": "jair_bolsonaro",
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jair_Bolsonaro_em_24_de_abril_de_2019_%281%29_%28cropped%29.jpg/200px-Jair_Bolsonaro_em_24_de_abril_de_2019_%281%29_%28cropped%29.jpg"
+    }
 }
