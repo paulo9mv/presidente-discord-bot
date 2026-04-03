@@ -2,37 +2,37 @@
 
 ![brasao_da_republica](assets/presidencia.ico)
 
-Bot do Discord que envia citações aleatórias de ~~quase~~ todos presidentes do Brasil. :mag: :computer:
+A Discord bot that sends random quotes from ~~almost~~ all presidents of Brazil. :mag: :computer:
 
-## Instalação :hammer:
+## Installation :hammer:
 
-Acesse [este link](https://discordapp.com/oauth2/authorize?client_id=530209100236324866&scope=bot&permissions=0) para selecionar em qual servidor o **Presidente BOT** deve ser adicionado. Você deve possuir uma conta no Discord. Após isso, ele estará configurado e pronto.
+Visit [this link](https://discordapp.com/oauth2/authorize?client_id=530209100236324866&scope=bot&permissions=0) to select which server **Presidente BOT** should be added to. You must have a Discord account. After that, it will be configured and ready to use.
 
-## Funcionamento
+## How it works
 
-**Presidente BOT** funciona a partir do comando _-pr_ que dispara uma consulta ao [Pensador](https://www.pensador.com/) e retorna uma citação aleatória de presidentes do Brasil.
+**Presidente BOT** works through the _-pr_ command, which queries [Pensador](https://www.pensador.com/) and returns a random quote from Brazilian presidents.
 
-**Comandos**
+**Commands**
 
-- -pr :arrow_right: Envia citação aleatória
-- -help :arrow_right: Seção de ajuda
-- -about :arrow_right: Sobre o BOT
-- -status :arrow_right: Quantidades de frases geradas
+- -pr :arrow_right: Sends a random quote
+- -help :arrow_right: Help section
+- -about :arrow_right: About the BOT
+- -status :arrow_right: Number of quotes generated
 
 ![Alt Text](assets/chat.gif)
 
-### Bibliotecas :books:
+### Libraries :books:
 
-Feito com dedicação, carinho e:
+Made with dedication, care, and:
 
 - [NodeJS](https://nodejs.org/en/)
 - [Cheerio](https://github.com/cheeriojs/cheerio)
 - [Discord.JS](https://discord.js.org/#/)
 
-### Mais
+### More
 
-[Presidente BOT para Telegram](https://github.com/paulo9mv/presidente-telegram-bot) :iphone:
+[Presidente BOT for Telegram](https://github.com/paulo9mv/presidente-telegram-bot) :iphone:
 
-Contribuições são bem-vindas!
+Contributions are welcome!
 
 :pencil2: **Paulo Viana**
